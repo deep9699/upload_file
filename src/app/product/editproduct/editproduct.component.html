@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="form-group">
+   <h4>Id:</h4> <input class="form-control" type="number" [(ngModel)]="id1">
+  </div>
+  
+  <div class="form-group">
+      <h4>Name:</h4> <input class="form-control" type="text" [(ngModel)]="name1">
+  </div>
+  
+  <div class="form-group">
+      <h4>Price:</h4> <input class="form-control" type="number" [(ngModel)]="price1">
+  </div>
+  
+  <div class="form-group">
+      <h4>Quantity:</h4> <input class="form-control" type="number" [(ngModel)]="quantity1">
+  </div>
+  
+   <div class="form-group">
+      <h4>Status:</h4> 
+      <select class="form-control" disabled [(ngModel)]="sts1">
+        <option *ngFor="let item of sta" >{{item}}</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <h4>Image:</h4> <input class="form-control" type="number" [(ngModel)]="pimg">
+</div>
+<button (click)="onSave()">Save</button>
